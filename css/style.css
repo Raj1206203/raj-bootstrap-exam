@@ -1,0 +1,141 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.hero .line{
+    height: 3px;
+    width: 140px;
+    margin-bottom: 9px;
+    display: inline-block;
+    background-color: #ea4020;
+}
+
+.hero .hero-btn button{
+    background-color: #ea4020;
+    margin-top: 40px;
+    padding: 14px 40px;
+}
+
+.hero .hero-img{
+    border-radius: 50% 50% 0% 50%;
+    border: 15px solid #292929 !important;
+    position: relative;
+    z-index: 3;
+    overflow: hidden; 
+}
+.hero .hero-right{
+    padding: 40px;
+    position: relative;
+    margin-top: 80px;
+}
+.typing {
+	position: relative;
+	width:fit-content;
+	padding-right:20px;
+}
+
+.typing::after {
+ content: "|";
+ position: absolute;
+ right: 0;
+ width: 100%;
+ color: black;
+ background: #fff;
+ animation: typing 6s steps(22) infinite, caret 1s infinite;
+}
+@-webkit-keyframes typing {
+ to {
+ width: 0;
+}
+}
+@keyframes typing {
+ to {
+ width: 0;
+}
+}
+@-webkit-keyframes caret {
+ 50% {
+ color: transparent;
+}
+}
+@keyframes caret {
+ 50% {
+ color: transparent;
+}
+}
+
+.hero-right::before {
+    content: "";
+	background-image: url(../images/banner/dots.png);
+	position: absolute;
+	top: 0;
+	left: -40px;
+	right: 0;
+	bottom: 0;
+	background-position: left;
+	background-size: cover;
+	animation-name: rotate;
+	animation-duration:80s;
+	animation-iteration-count: infinite;
+}
+@keyframes rotate {
+ from {
+transform: rotate(-360deg);
+}
+to {
+	transform: rotate(360deg);
+}
+}
+
+.hero-right::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    border: 20px solid #ea4020;
+    border-radius: 310px;
+    background: #fff;
+}
+
+.about{
+    background: #f7f6ff;
+}
+.about .border{
+    height: 4px;
+    width: 40px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    display: inline-block;
+    background-color: #cb7c6f;
+}
+.about .about-img{
+    background-size: contain;
+}
+.about .about-img img{
+    width: 100%;
+}
+
+.about .about-info h4{
+    border-left: 2px solid #ea4020;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+ 
+.about .about-info .work-circle{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #ea4020;
+    color: #fff;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    float: left;
+}
+
